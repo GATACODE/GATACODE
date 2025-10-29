@@ -18,4 +18,4 @@ test('LogIn read user and pass', async ({ page }) => {
     await expect(logoutText == " Logout").toBeTruthy();
     await page.waitForTimeout(2000);
 });
-//npx playwright test tests/5.spec.js --headed --project chromium
+//npx playwright test tests/3.spec.js --headed --project chromium
