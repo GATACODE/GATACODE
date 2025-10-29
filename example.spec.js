@@ -1,12 +1,11 @@
 // @ts-check
-const { test, expect } = require('@playwright/test'); //library
-//3 diffrent browsers: chromium,webkit(safari), firefox
-//po ymolchanijy v playwright test zapuskaetsja v headless rezime
+const { test, expect } = require('@playwright/test');
+
 test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/'); //pereiti po ccilke
+  await page.goto('https://playwright.dev/');
 
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/); // assert proverki
+  await expect(page).toHaveTitle(/Playwright/);
 });
 
 test('get started link', async ({ page }) => {
